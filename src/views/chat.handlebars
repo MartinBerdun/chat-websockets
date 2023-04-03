@@ -1,0 +1,19 @@
+<h1>
+Coder chat</h1>
+
+{{!-- para enviar el mensaje --}}
+<div> 
+    <input type="text" id="chatBox">
+</div>
+
+
+{{!-- para ver los mensajes que van llegando --}}
+<div>
+    <p id="messageLogs"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{!-- se pone arriba de las demas etiquetas --}}
+<script src="/socket.io/socket.io.js"></script>
+{{!-- cuando levantamos desde nuestro app.js el servidor de socket automaticamente en nuestro ambiente local el socket.io envia un objeto del tipo socket del lado del cliente que va a poder seer accedido al cliente desde esta direccion // nos sirve para que en nuestro escrip tengamo acceso a nuestro objeto io    --}}
+<script src="/js/index.js"></script>
